@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Omar Bouhaddach, étudiant en intelligence artificielle à la Higher School of Technology de Meknes. Découvrez ses compétences en développement web, programmation, réseaux et bases de données.">
+    <meta name="keywords" content="Omar Bouhaddach, portfolio, intelligence artificielle, développement web, programmation, Python, Java, réseaux, bases de données, technologies émergentes">
+    <meta name="author" content="Omar Bouhaddach">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Omar Bouhaddach - Portfolio</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="images/WhatsApp Image 2024-07-14 à 23.09.16_0a64fcd3.jpg" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="#main">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+        </ul>
+        <button onclick="contactMe()">Contact Me</button>
+        <button id="menuButton" onclick="openMenu()">
+            <i class='bx bx-menu'></i>
+        </button>
+    </nav>
+    <div class="main" id="main">
+        <div class="left">
+            <h5>Hello, I am Omar</h5>
+            <h3>I study <span>Artificial Intelligence</span></h3>
+            <p>I am a student at the Higher School of Technology in Meknes, focusing on artificial intelligence and emerging technologies.</p>
+            <p>Fluent in Arabic, with moderate English and French skills, I am diving into programming and exploring computer science fundamentals.</p>
+            <button class="button" onclick="downloadCV()">Download my CV</button>
+        </div>
+        <div class="right">
+            <div class="image-container">
+                <img src="images/omar-removebg-preview.png" alt="Omar">
+            </div>
+        </div>
+    </div>
+    <div class="skills" id="skills">
+        <h5>My Skills</h5>
+        <h3>My Expertise</h3>
+        <div class="skill-items">
+            <div class="item">
+                <div class="icon"><i class='bx bx-code-alt'></i></div>
+                <h4>Web Development</h4>
+                <p>Experienced in developing web applications with a solid understanding of HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bx-network-chart'></i></div>
+                <h4>Network</h4>
+                <p>knowledge of network setup and management, including fundamental concepts and common troubleshooting techniques.</p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bxl-python'></i></div>
+                <h4>Python</h4>
+                <p>Proficient in Python, applying it to various programming tasks and data analysis.</p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bx-data'></i></div>
+                <h4>Databases</h4>
+                <p>Understanding of database management and querying with a focus on relational databases.</p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bxs-terminal'></i></div>
+                <h4>Operating Systems</h4>
+                <p>Experience with Linux Ubuntu and general operating system concepts.</p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bxl-java' style='color:#000000'></i></div>
+                <h4>Java OOP</h4>
+                <p>Working knowledge of Java and object-oriented programming principles.</p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bxl-git'></i></div>
+                <h4>Git/GitHub</h4>
+                <p>Proficient in using Git and GitHub for version control and collaborative projects.</p>
+            </div>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <div class="left">
+            <img src="images/WhatsApp_Image_2024-07-14_à_23.18.44_bcbf1633-removebg-preview.png" alt="Omar">
+        </div>
+        <div class="right">
+            <h5>About</h5>
+            <h3>About me</h3>
+            <p>I am currently in my second year at the Higher School of Technology in Meknes, studying artificial intelligence.</p>
+            <p>With a background in programming and computer science, I am passionate about emerging technologies and continuous learning.</p>
+        </div>
+    </div>
+    <div class="portfolio" id="portfolio">
+        <div class="header">
+            <div class="info">
+                <h5>Recent Projects</h5>
+                <h3>My Portfolio</h3>
+            </div>
+            <button onclick="redirectToGitHub()"><i class='bx bxl-github'></i> Visit My GitHub</button>
+        </div>
+        <div class="portfo-items">
+            <div class="item">
+                <img src="images/ATTARWIJ AGENCY (11.07.2024 22_07).png" alt="Chat Bot Project">
+                <div class="info">
+                    <h4>Chat Bot</h4>
+                    <p>Developed a chatbot for Attarwij Agency to handle customer inquiries and provide information about the agency's services.</p>
+                    <a href="https://github.com/nassimoulkaid/attarwij">View in GitHub <i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="top">
+            <div class="logo">
+                <img src="images/WhatsApp Image 2024-07-14 à 23.09.16_0a64fcd3.jpg" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="#main">Home</a></li>
+                
+                <li><a href="mailto:bouhaddachomar@gmail.com">Contact</a></li>
+                
+                <li><a href="https://github.com/bugshadow?tab=repositories">Projects</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="https://github.com/bugshadow"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/omar-bouhaddach-7420a02b4"><i class='bx bxl-linkedin'></i></a>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="bottom">
+            <p>Made by Omar Bouhaddach</p>
+            <div class="links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookies Settings</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
