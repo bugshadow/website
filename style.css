@@ -688,10 +688,16 @@ footer .top .logo img {
     .main {
         flex-direction: column;
     }
+    .main .right .image-container img{
+        margin-top: 30px;
+    }
 
     .about {
         flex-direction: column;
         justify-content: center;
+    }
+    .about .right{
+        margin-left: -53px;
     }
 
     .portfolio .portfo-items {
@@ -733,6 +739,7 @@ footer .top .logo img {
 
     .main {
         padding: 42px;
+        height: auto;
     }
 
     .skills {
@@ -797,5 +804,117 @@ footer .top .logo img {
 
     .portfolio .portfo-items .item {
         width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        height: 60px;
+        padding: 0 20px;
+    }
+
+    nav .logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    nav button#menuButton {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .main {
+        padding: 20px;
+        height: 200px;
+    }
+
+    .main .left h1 {
+        font-size: 2rem;
+    }
+
+    .main .left h5 {
+        font-size: 1.2rem;
+    }
+
+    .main .left h3 {
+        font-size: 2rem;
+    }
+
+    .main .left p {
+        font-size: 1rem;
+    }
+
+    .main .left .button {
+        font-size: 14px;
+        padding: 0.8em 1em;
+    }
+
+    .main .right .image-container {
+        width: 300px;
+        height: 300px;
+    }
+
+    .skills,
+    .about,
+    .portfolio {
+        padding: 60px 20px;
+    }
+
+    .skills h3,
+    .about .right h3,
+    .portfolio .header h3 {
+        font-size: 28px;
+    }
+
+    .skills .skill-items .item {
+        padding: 20px;
+    }
+
+    .skills .skill-items .item .icon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 15px;
+    }
+
+    .skills .skill-items .item .icon i {
+        font-size: 22px;
+    }
+
+    .skills .skill-items .item h4 {
+        font-size: 16px;
+    }
+
+    .skills .skill-items .item p {
+        font-size: 12px;
+    }
+
+    .about .left img {
+        width: 100%;
+    }
+
+    .about .right p {
+        font-size: 14px;
+    }
+
+    .portfolio .header button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .portfolio .portfo-items .item {
+        width: 100%;
+    }
+
+    footer {
+        padding: 60px 20px;
+    }
+
+    footer .top .social-links {
+        font-size: 18px;
+    }
+
+    footer .bottom p,
+    footer .bottom .links a {
+        font-size: 10px;
     }
 }
