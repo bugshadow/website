@@ -781,14 +781,14 @@ footer .top .logo img {
 
     .about .right {
         width: 100%; /* Assure que le conteneur parent prend toute la largeur */
-        padding: 27px; /* Supprime les paddings éventuels */
+        padding-left: 40px ; /* Supprime les paddings éventuels */
     }
     .about .right h3,
     .about .right h5{
-        margin-left: 27px;
+        margin-left: 16px;
     }
     .about .right p {
-        width: 90%; /* Prend 90% de la largeur de la page sur les téléphones */
+        width: 95%; /* Prend 90% de la largeur de la page sur les téléphones */
         margin-left: auto;
         margin-right: auto;
         text-align: justify;
