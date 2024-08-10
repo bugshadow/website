@@ -179,6 +179,8 @@ nav button#menuButton {
     position: relative;
     overflow: hidden;
     outline: 2px solid var(--primaryColor);
+    width: auto; /* Ajouté pour permettre le redimensionnement */
+    max-width: 200px; /* Ajouté pour limiter la largeur de la bouton */
 }
 
 .main .left .button:hover {
@@ -397,6 +399,8 @@ nav button#menuButton {
     font-size: 16px; /* Augmenté de 1.25rem à 16px */
     margin-top: 30px;
     color: var(--lightColor);
+    line-height: 1.12; /* Ajouté pour améliorer la lisibilité */
+    width: 100%; /* Par défaut, prend toute la largeur */
 }
 
 /* Portfolio Section */
@@ -419,7 +423,7 @@ nav button#menuButton {
 }
 
 .portfolio .header .info h3 {
-    font-size: 42px; /* Augmenté de 2.5rem à 42px */
+    font-size: 36px; /* Réduit la taille de la police pour les titres h3 dans la section Portfolio */
     color: var(--lightColor);
 }
 
@@ -735,11 +739,13 @@ footer .top .logo img {
         justify-content: space-between;
         padding: 0 42px;
     }
+
     .main .left .button {
         width: 90%; /* Largeur de 90% pour les téléphones et tablettes */
         max-width: none; /* Supprime la limite de largeur maximale */
         margin-left: 20px;
     }
+
     nav ul {
         display: none;
     }
@@ -773,6 +779,21 @@ footer .top .logo img {
         padding: 85px 42px;
     }
 
+    .about .right {
+        width: 100%; /* Assure que le conteneur parent prend toute la largeur */
+        padding: 27px; /* Supprime les paddings éventuels */
+    }
+    .about .right h3,
+    .about .right h5{
+        margin-left: 27px;
+    }
+    .about .right p {
+        width: 90%; /* Prend 90% de la largeur de la page sur les téléphones */
+        margin-left: auto;
+        margin-right: auto;
+        text-align: justify;
+    }
+
     .portfolio {
         padding: 60px 42px;
     }
@@ -795,11 +816,13 @@ footer .top .logo img {
     nav ul li a {
         font-size: 13px;
     }
+
     .main .left .button {
         width: 90%; /* Largeur de 90% pour les téléphones et tablettes */
         max-width: none; /* Supprime la limite de largeur maximale */
         margin-left: 20px;
     }
+
     nav .logo a {
         font-size: 18px;
     }
@@ -835,11 +858,13 @@ footer .top .logo img {
         height: 60px;
         padding: 0 20px;
     }
+
     .main .left .button {
         width: 90%; /* Largeur de 90% pour les téléphones et tablettes */
         max-width: none; /* Supprime la limite de largeur maximale */
         margin-left: 13px;
     }
+
     nav .logo img {
         width: 40px;
         height: 40px;
@@ -856,19 +881,23 @@ footer .top .logo img {
     }
 
     .main .left h1 {
-        font-size: 2rem;
+        font-size: 1.1rem;
     }
 
     .main .left h5 {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .main .left h3 {
-        font-size: 2rem;
+        font-size: 1.6rem;
+    }
+
+    .main .left h3 span {
+        font-size: 1.7rem;
     }
 
     .main .left p {
-        font-size: 1rem;
+        font-size: 13px;
     }
 
     .main .left .button {
@@ -893,10 +922,16 @@ footer .top .logo img {
         font-size: 28px;
     }
 
+    
+    .about .right p {
+        font-size: 15px; /* Réduit davantage la taille de la police pour les très petits écrans */
+        line-height: 1.9; /* Ajusté pour améliorer la lisibilité sur les très petits écrans */
+    }
+
     .skills .skill-items .item {
         padding: 20px;
     }
-
+    
     .skills .skill-items .item .icon {
         width: 40px;
         height: 40px;
@@ -919,8 +954,8 @@ footer .top .logo img {
         width: 100%;
     }
 
-    .about .right p {
-        font-size: 14px;
+    .about {
+        align-items: center;
     }
 
     .portfolio .header button {
