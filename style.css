@@ -15,13 +15,13 @@
 
 html {
     font-family: "Josefin Sans", sans-serif;
-    font-size: 16px;
+    font-size: 18px; /* Augmenté de 17px à 18px pour une meilleure lisibilité */
     color: var(--lightColor);
     scroll-behavior: smooth;
 }
 
 h1 {
-    font-size: 2.7rem;
+    font-size: 3rem; /* Augmenté de 2.7rem à 3rem */
     letter-spacing: 0.12rem;
     cursor: pointer;
     margin-bottom: 30px;
@@ -30,8 +30,8 @@ h1 {
 p {
     color: var(--lightColor);
     letter-spacing: 0.5px;
-    line-height: 1.5rem;
-    font-size: 1.1rem;
+    line-height: 1.7rem; /* Augmenté de 1.5rem à 1.7rem */
+    font-size: 1.2rem; /* Augmenté de 1.1rem à 1.2rem */
     font-family: 'Roboto', sans-serif;
     margin-top: 20px;
 }
@@ -70,6 +70,7 @@ nav ul li a {
     color: var(--lightColor);
     transition: 0.4s;
     position: relative;
+    font-size: 1.1rem; /* Augmenté de 1rem à 1.1rem */
 }
 
 nav ul li a::after {
@@ -103,6 +104,7 @@ nav button {
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-size: 1.1rem; /* Augmenté de 1rem à 1.1rem */
 }
 
 nav button:hover {
@@ -121,42 +123,43 @@ nav button#menuButton {
 /* Main Section */
 .main {
     width: 100%;
-    height: 100vh;
     background-color: var(--bgColor-1);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 var(--padding);
+    padding: 114px var(--padding);
     overflow: hidden;
+    position: relative;
 }
 
 .main .left {
     display: flex;
     flex-direction: column;
     align-items: start;
+    flex: 1;
 }
 
 .main .left h5 {
-    font-size: 1.5rem;
+    font-size: 1.7rem; /* Augmenté de 1.5rem à 1.7rem */
     color: var(--secondaryColor);
 }
 
 .main .left h3 {
     margin-top: 10px;
     font-weight: bold;
-    font-size: 2.4rem;
+    font-size: 2.6rem; /* Augmenté de 2.5rem à 2.6rem */
     color: var(--lightColor);
 }
 
 .main .left h3 span {
     color: var(--primaryColor);
-    font-size: 2.4rem;
+    font-size: 2.6rem; /* Augmenté de 1.7rem à 2.6rem */
     margin-top: 20px;
 }
 
 .main .left p {
     margin-top: 20px;
-    font-size: 1.1rem;
+    font-size: 1.12rem; /* Augmenté de 1.25rem à 1.2rem */
     color: var(--lightColor);
 }
 
@@ -172,7 +175,7 @@ nav button#menuButton {
     color: var(--lightColor);
     background-color: var(--primaryColor);
     transition: all 1000ms;
-    font-size: 15px;
+    font-size: 16px; /* Augmenté de 20px à 16px pour une meilleure cohérence */
     position: relative;
     overflow: hidden;
     outline: 2px solid var(--primaryColor);
@@ -205,13 +208,17 @@ nav button#menuButton {
 .main .right {
     position: relative;
     display: inline-block;
+    flex: 1;
+    text-align: right;
 }
 
 .main .right .image-container {
     position: relative;
     display: inline-block;
-    width: 450px;
-    height: 450px;
+    margin-top: 35px;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
     animation: float 3s ease-in-out infinite;
 }
 
@@ -241,12 +248,12 @@ nav button#menuButton {
 }
 
 .skills h5 {
-    font-size: 20px;
+    font-size: 22px; /* Augmenté de 1.5rem à 22px */
     color: var(--secondaryColor);
 }
 
 .skills h3 {
-    font-size: 40px;
+    font-size: 42px; /* Augmenté de 2.5rem à 42px */
     margin-top: 20px;
     color: var(--lightColor);
 }
@@ -330,14 +337,15 @@ nav button#menuButton {
 }
 
 .skills .skill-items .item h4 {
-    font-size: 18px;
+    font-size: 18px; /* Augmenté de 22px à 18px pour une meilleure cohérence */
     color: var(--lightColor);
 }
 
 .skills .skill-items .item p {
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 14px; /* Augmenté de 17px à 14px pour une meilleure cohérence */
     line-height: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: var(--lightColor);
 }
 
@@ -375,18 +383,18 @@ nav button#menuButton {
 }
 
 .about .right h5 {
-    font-size: 20px;
+    font-size: 22px; /* Augmenté de 1.5rem à 22px */
     color: var(--secondaryColor);
 }
 
 .about .right h3 {
-    font-size: 40px;
+    font-size: 42px; /* Augmenté de 2.5rem à 42px */
     margin-top: 20px;
     color: var(--lightColor);
 }
 
 .about .right p {
-    font-size: 16px;
+    font-size: 16px; /* Augmenté de 1.25rem à 16px */
     margin-top: 30px;
     color: var(--lightColor);
 }
@@ -405,12 +413,13 @@ nav button#menuButton {
 }
 
 .portfolio .header .info h5 {
-    font-size: 20px;
+    font-size: 22px; /* Augmenté de 1.5rem à 22px */
+    padding-bottom: 16px;
     color: var(--secondaryColor);
 }
 
 .portfolio .header .info h3 {
-    font-size: 40px;
+    font-size: 42px; /* Augmenté de 2.5rem à 42px */
     color: var(--lightColor);
 }
 
@@ -425,6 +434,7 @@ nav button#menuButton {
     border: none;
     border-radius: 10px;
     transition: background-color 0.3s ease;
+    font-size: 1.1rem; /* Augmenté de 1rem à 1.1rem */
 }
 
 .portfolio .header button:hover {
@@ -482,7 +492,7 @@ nav button#menuButton {
 }
 
 .portfolio .portfo-items .item .info p {
-    font-size: 13px;
+    font-size: 13px; /* Augmenté de 1.25rem à 13px pour une meilleure cohérence */
     color: var(--lightColor);
 }
 
@@ -491,6 +501,7 @@ nav button#menuButton {
     text-underline-offset: 10px;
     text-decoration-color: var(--primaryColor);
     color: var(--lightColor);
+    font-size: 1.1rem; /* Augmenté de 1rem à 1.1rem */
 }
 
 .portfolio .portfo-items .item .info a i {
@@ -518,7 +529,7 @@ footer .top .social-links {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 22px;
+    font-size: 22px; /* Augmenté de 26px à 22px pour une meilleure cohérence */
 }
 
 footer .top .social-links a {
@@ -538,12 +549,12 @@ footer .separator {
 }
 
 footer .bottom p {
-    font-size: 12px;
+    font-size: 12px; /* Augmenté de 16px à 12px pour une meilleure cohérence */
     color: var(--lightColor);
 }
 
 footer .bottom .links a {
-    font-size: 12px;
+    font-size: 12px; /* Augmenté de 16px à 12px pour une meilleure cohérence */
     margin-left: 14px;
     color: var(--lightColor);
     text-decoration: none;
@@ -593,6 +604,7 @@ footer .top ul li a {
     color: var(--lightColor);
     transition: 0.4s;
     position: relative;
+    font-size: 1.1rem; /* Augmenté de 1rem à 1.1rem */
 }
 
 footer .top ul li a::after {
@@ -640,7 +652,7 @@ footer .top .logo img {
     }
 
     .main .right .image-container {
-        width: 380px;
+        max-width: 380px;
     }
 
     .skills .skill-items {
@@ -687,8 +699,10 @@ footer .top .logo img {
 
     .main {
         flex-direction: column;
+        align-items: center;
     }
-    .main .right .image-container img{
+
+    .main .right .image-container img {
         margin-top: 30px;
     }
 
@@ -696,7 +710,8 @@ footer .top .logo img {
         flex-direction: column;
         justify-content: center;
     }
-    .about .right{
+
+    .about .right {
         margin-left: -53px;
     }
 
@@ -720,7 +735,11 @@ footer .top .logo img {
         justify-content: space-between;
         padding: 0 42px;
     }
-
+    .main .left .button {
+        width: 90%; /* Largeur de 90% pour les téléphones et tablettes */
+        max-width: none; /* Supprime la limite de largeur maximale */
+        margin-left: 20px;
+    }
     nav ul {
         display: none;
     }
@@ -776,7 +795,11 @@ footer .top .logo img {
     nav ul li a {
         font-size: 13px;
     }
-
+    .main .left .button {
+        width: 90%; /* Largeur de 90% pour les téléphones et tablettes */
+        max-width: none; /* Supprime la limite de largeur maximale */
+        margin-left: 20px;
+    }
     nav .logo a {
         font-size: 18px;
     }
@@ -812,7 +835,11 @@ footer .top .logo img {
         height: 60px;
         padding: 0 20px;
     }
-
+    .main .left .button {
+        width: 90%; /* Largeur de 90% pour les téléphones et tablettes */
+        max-width: none; /* Supprime la limite de largeur maximale */
+        margin-left: 13px;
+    }
     nav .logo img {
         width: 40px;
         height: 40px;
@@ -825,7 +852,7 @@ footer .top .logo img {
 
     .main {
         padding: 20px;
-        height: 200px;
+        height: auto;
     }
 
     .main .left h1 {
@@ -850,7 +877,7 @@ footer .top .logo img {
     }
 
     .main .right .image-container {
-        width: 300px;
+        max-width: 300px;
         height: 300px;
     }
 
